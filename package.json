@@ -4,10 +4,9 @@
   "description": "Responsive ecommerce template built with Vue.js and Nuxt.js",
   "author": "ivan lori <ivan.lori@protonmail.com>",
   "scripts": {
-    "start": "nuxt",
-    "production": "nuxt build",
-    "heroku-postbuild": "npm run build",
-    "now-build": "nuxt generate"
+    "dev": "nuxt",
+    "start": "nuxt build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -30,10 +29,10 @@
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "bulma": "^0.7.5",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.12.2",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.5",
-    "vuex": "^3.1.1"
+    "vue-router": "^3.1.6",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@babel/preset-env": "~7.5.5",
