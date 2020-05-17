@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nuxt",
     "production": "nuxt build",
-    "heroku-postbuild": "nuxt build",
     "now-build": "nuxt generate"
   },
   "repository": {
