@@ -4,8 +4,9 @@
   "description": "Responsive ecommerce template built with Vue.js and Nuxt.js",
   "author": "ivan lori <ivan.lori@protonmail.com>",
   "scripts": {
-    "start": "nuxt",
+    "start": "nuxt start",
     "production": "nuxt build",
+    "heroku-postbuild": "npm run build",
     "now-build": "nuxt generate"
   },
   "repository": {
