@@ -4,8 +4,10 @@
   "author": "ivan lori <ivan.lori@protonmail.com>",
   "scripts": {
     "dev": "nuxt",
-    "production": "nuxt build",
-    "now-build": "nuxt generate"
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "now-build": "nuxt generate",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
