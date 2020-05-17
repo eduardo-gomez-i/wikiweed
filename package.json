@@ -5,7 +5,8 @@
   "author": "ivan lori <ivan.lori@protonmail.com>",
   "scripts": {
     "dev": "nuxt",
-    "start": "nuxt build",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "heroku-postbuild": "npm run build"
   },
   "repository": {
