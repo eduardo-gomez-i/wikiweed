@@ -3,11 +3,6 @@
 ## Installing
 
 ```
-# install Vue cli
-npm install -g @vue/cli
-
-# clone repository
-git clone https://github.com/ivanlori/Vuemmerce.git
 
 # install dependencies
 npm install
