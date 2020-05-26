@@ -6,7 +6,7 @@
         </figure>
         <div class="card-content column is-two-thirds">
           <div class="card-content__title">
-            <h2 class="title is-4">{{ product.title }}
+            <h1 class="title is-4">{{ product.title }}
               <button class="button is-small" :title="removeFromFavouriteLabel" v-show="product.isFavourite" @click="removeFromFavourite(product.id)">
                 <span class="icon is-small">
                   <i class="fa fa-heart"></i>
@@ -17,8 +17,10 @@
                   <i class="fa fa-heart-o"></i>
                 </span>
               </button>
-            </h2>
+            </h1>
+            <hr>
           </div>
+          <buttoms></buttoms>
           <div class="card-content__text">
             <p>
             {{ product.description }}
@@ -59,6 +61,11 @@
               </select>
             </div>-->
           </div>
+          <v-rating
+      v-model="rating"
+      background-color="orange lighten-3"
+      color="orange"
+    ></v-rating>
           <!--<div class="card-content__price is-pulled-left">
             <span class="title is-3"><strong>{{ product.price }}&euro;</strong></span>
           </div>-->
@@ -68,12 +75,87 @@
           </div>-->
       </div>
     </div>
+    <div>
+      <h2>efectos</h2>
+      <v-col cols="4">
+        <h3>Relajacion</h3>
+        <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="63"
+      striped
+    ></v-progress-linear>
+    <h3>Sueño</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="52"
+      striped
+    ></v-progress-linear>
+    <h3>Felicidad</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="51"
+      striped
+    ></v-progress-linear>
+      </v-col>
+      <v-col cols="4">
+        <h3>Estres</h3>
+        <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="39"
+      striped
+    ></v-progress-linear>
+    <h3>Miedo</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="36"
+      striped
+    ></v-progress-linear>
+    <h3>Insomnio</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="32"
+      striped
+    ></v-progress-linear>
+      </v-col>
+      <v-col cols="4">
+        <h3>Salivacion</h3>
+        <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="38"
+      striped
+    ></v-progress-linear>
+    <h3>Ojos llorosos</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="21"
+      striped
+    ></v-progress-linear>
+    <h3>Paranoia</h3>
+    <v-progress-linear
+      color="light-green darken-4"
+      height="10"
+      value="7"
+      striped
+    ></v-progress-linear>
+      </v-col>
+    </div>
   </div>
+
 </template>
 
 <script>
+  import buttoms from '@/components/progressbar/buttoms';
 export default {
   name: 'product_detail-id',
+
 
   validate ({ params }) {
     return /^\d+$/.test(params.id)
@@ -89,6 +171,10 @@ export default {
       selected: 1,
       quantityArray: []
     };
+  },
+
+  components: {
+    buttoms
   },
 
   mounted () {
@@ -147,6 +233,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title{
+  font-size: 35px;
+}
+  hr{
+    border: 1px solid green;
+  }
   .card-content {
     padding: 15px 10px 15px 0;
 
