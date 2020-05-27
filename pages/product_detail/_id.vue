@@ -20,7 +20,7 @@
             </h1>
             <hr>
           </div>
-          <buttoms></buttoms>
+          <caracteristicas></caracteristicas>
           <div class="card-content__text">
             <p>
             {{ product.description }}
@@ -175,7 +175,7 @@ export default {
   },
 
   components: {
-    buttoms
+    caracteristicas
   },
 
   mounted () {
