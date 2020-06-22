@@ -1,7 +1,7 @@
 {
-  "name": "vuemmerce",
+  "name": "wiki",
   "version": "0.9.3",
-  "author": "ivan lori <ivan.lori@protonmail.com>",
+  "author": "",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -10,18 +10,15 @@
     "heroku-postbuild": "npm run build"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/ivanlori/Vuemmerce.git"
+    "type": "git"
   },
   "keywords": [
     "css",
     "js",
     "html",
     "template",
-    "ecommerce",
+    "cannabis",
     "vuejs",
-    "theme",
-    "responsive",
     "nuxtjs"
   ],
   "license": "MIT",
