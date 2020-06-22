@@ -1,5 +1,6 @@
 .DS_Store
 node_modules
+wikiweed
 /dist
 .nuxt
 
@@ -20,3 +21,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+
