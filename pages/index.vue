@@ -8,7 +8,8 @@
 <script>
 import VmProductsList from '@/components/products_list/ProductsListContainer';
 import VmHero from '@/components/hero/Hero';
-
+import axios from 'axios';
+   
 export default {
   name: 'index',
   components: {

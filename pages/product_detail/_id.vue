@@ -72,11 +72,9 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-=======
+
   import caracteristicas from '@/components/progressbar/caracteristicas';
 
->>>>>>> 2c4f035121bbd58759a17fa4d092bb3da12f9173
 export default {
   name: 'product_detail-id',
 

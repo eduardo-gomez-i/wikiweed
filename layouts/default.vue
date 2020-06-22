@@ -17,6 +17,7 @@ import VmFooter from '@/components/footer/Footer';
 import VmLoginModal from '@/components/modal/Login';
 import VmRegistrationModal from '@/components/modal/Registration';
 import VmCheckoutModal from '@/components/modal/Checkout';
+import VmStart from '@/components/modal/Start';
 
 export default {
   components: {
@@ -24,7 +25,8 @@ export default {
     VmFooter,
     VmLoginModal,
     VmRegistrationModal,
-    VmCheckoutModal
+    VmCheckoutModal,
+    VmStart
   }
 }
 </script>

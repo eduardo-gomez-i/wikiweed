@@ -90,8 +90,23 @@ export default {
       return this.$store.getters.isUserLoggedIn;
     }
   },
-
+  mounted: function () {
+  	console.log("Vue.js is running...");
+  	this.getAllUsers();
+  },
   methods: {
+    getAllUsers: function () {
+  		axios.get('http://localhost/weed/conexion.php?action=read')
+  		.then(function (response) {
+  			console.log(response);
+
+  			if (response.data.error) {
+  				app.errorMessage = response.data.message;
+  			} else {
+  				app.users = response.data.users;
+  			}
+  		})
+  	},
     saveToFavorite (id) {
       let isUserLogged = this.$store.state.userInfo.isLoggedIn;
 
