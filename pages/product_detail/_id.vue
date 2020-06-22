@@ -76,7 +76,10 @@
 
 <script>
 
+
   import caracteristicas from '@/components/progressbar/caracteristicas';
+
+
 
 export default {
   name: 'product_detail-id',
