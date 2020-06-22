@@ -164,7 +164,8 @@ export default {
   
   data () {
     return {
-      rating: product.rating,
+      addToCartLabel: 'Add to cart',
+      removeFromCartLabel: 'Remove from cart',
       addToFavouriteLabel: 'Add to favourite',
       removeFromFavouriteLabel: 'Remove from favourite',
       product: {},

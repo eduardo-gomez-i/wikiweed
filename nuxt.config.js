@@ -75,8 +75,10 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
-
+  plugins: ['@plugins/vuetify'],
+  build: {
+    vendor: ['vuetify']
+  },
   /*
   ** Nuxt.js modules
   */
@@ -89,5 +91,9 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  }
+  },
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/vuetify'
+  ]
 }
