@@ -19,6 +19,9 @@
               </button>
             </h2>
           </div>
+
+          <caracteristicas></caracteristicas>
+
           <div class="card-content__text">
             <p>
             {{ product.description }}
@@ -72,11 +75,9 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-=======
+
   import caracteristicas from '@/components/progressbar/caracteristicas';
 
->>>>>>> 2c4f035121bbd58759a17fa4d092bb3da12f9173
 export default {
   name: 'product_detail-id',
 
@@ -94,6 +95,11 @@ export default {
       selected: 1,
       quantityArray: []
     };
+  },
+
+
+  components: {
+    caracteristicas
   },
 
   mounted () {
